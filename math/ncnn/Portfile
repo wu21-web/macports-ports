@@ -11,7 +11,7 @@ revision            0
 
 categories          math devel
 platforms           darwin
-license             BSD
+license             BSD-3-Clause
 maintainers         {wu21-web @wu21-web} openmaintainer
 
 description         High-performance neural network inference framework optimized for mobile platforms.
