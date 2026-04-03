@@ -28,6 +28,12 @@ checksums           rmd160  b1a97ac7eaa6b97dcb34d05587f4b94a9d42a751 \
 depends_build-append \
                     port:vulkan-headers
 
+
+configure.cxxflags-append \
+    -Wno-error=deprecated-declarations \
+    -Wno-error=format
+
+
 depends_lib-append  port:vulkan-loader \
                     port:glslang \
                     port:protobuf-cpp
