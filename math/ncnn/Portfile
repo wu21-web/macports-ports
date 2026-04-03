@@ -4,7 +4,8 @@ PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.1
 
-github.setup        Tencent ncnn 20260113
+github.setup        Tencent ncnn e956fbf91866768393e5066928e469c3a388338e
+version             20260113
 revision            0
 
 categories          math devel
@@ -33,4 +34,3 @@ configure.args-append \
                     -DNCNN_BUILD_EXAMPLES=OFF \
                     -DNCNN_BUILD_BENCHMARK=OFF \
                     -DNCNN_BUILD_TOOLS=ON
-                    
