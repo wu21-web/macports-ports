@@ -4,7 +4,8 @@ PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.1
 
-github.setup        Tencent ncnn 20260113
+github.setup        Tencent ncnn e956fbf9bd97fe945df35d736747dc816f8b5f42
+version             20260113
 revision            0
 
 categories          math devel
@@ -20,9 +21,9 @@ long_description    ncnn is a high-performance neural network inference computin
 
 compiler.cxx_standard 2017
 
-checksums           rmd160  b4aadc922c0108e6be9dab151b0add662a4eb8dc \
-                    sha256  2fdc5c6e37f8552921a9daad498a1be54a6fa6edd32c1a9e3030b27fab253b47 \
-                    size    13233848
+checksums           rmd160  b1a97ac7eaa6b97dcb34d05587f4b94a9d42a751 \
+                    sha256  7a878ef8d39139dc2864110cb9e5753ba622583dec4c23642c8353fe30736be8 \
+                    size    13239452
 
 depends_lib-append  port:vulkan-loader \
                     port:vulkan-headers
