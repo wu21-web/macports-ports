@@ -5,6 +5,7 @@ PortGroup           github 1.0
 PortGroup           cmake 1.1
 
 github.setup        Tencent ncnn 20260113
+github.tarball_from archive
 version             20260113
 revision            0
 
