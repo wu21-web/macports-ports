@@ -1,0 +1,36 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           cmake 1.1
+
+github.setup        Tencent ncnn 20260113
+revision            0
+
+categories          math devel
+platforms           darwin
+license             BSD
+maintainers         {wu21-web @wu21-web} openmaintainer
+
+description         High-performance neural network inference framework optimized for mobile platforms.
+long_description    ncnn is a high-performance neural network inference computing framework \
+                    optimized for mobile platforms. ncnn is deeply considerate about \
+                    deployment and performance on mobile phones from the beginning of design. \
+                    It supports Vulkan GPU acceleration and is widely used for on-device AI.
+
+compiler.cxx_standard 2017
+
+checksums           rmd160  b4aadc922c0108e6be9dab151b0add662a4eb8d \
+                    sha256  2fdc5c6e37f8552921a9daad498a1be54a6fa6edd32c1a9e3030b27fab253b47 \
+                    size    13233848
+
+depends_lib-append  port:vulkan-loader \
+                    port:vulkan-headers
+
+configure.args-append \
+                    -DNCNN_VULKAN=ON \
+                    -DNCNN_SYSTEM_GLSLANG=OFF \
+                    -DNCNN_BUILD_EXAMPLES=OFF \
+                    -DNCNN_BUILD_BENCHMARK=OFF \
+                    -DNCNN_BUILD_TOOLS=ON
+                    
