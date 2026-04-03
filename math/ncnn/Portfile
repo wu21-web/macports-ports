@@ -4,9 +4,7 @@ PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.1
 
-version             20260113
-github.setup        Tencent ncnn e956fbf9bd97fe945df35d736747dc816f8b5f42
-distname            ${name}-${version}
+github.setup        Tencent ncnn 20260113
 revision            0
 
 categories          math devel
@@ -22,7 +20,7 @@ long_description    ncnn is a high-performance neural network inference computin
 
 compiler.cxx_standard 2017
 
-checksums           rmd160  b4aadc922c0108e6be9dab151b0add662a4eb8d \
+checksums           rmd160  b4aadc922c0108e6be9dab151b0add662a4eb8dc \
                     sha256  2fdc5c6e37f8552921a9daad498a1be54a6fa6edd32c1a9e3030b27fab253b47 \
                     size    13233848
 
