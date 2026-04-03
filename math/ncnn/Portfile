@@ -34,7 +34,9 @@ depends_lib-append  port:vulkan-loader \
                     
 configure.args-append \
                     -DNCNN_VULKAN=ON \
-                    -DNCNN_SYSTEM_GLSLANG=OFF \
+                    -DNCNN_SYSTEM_GLSLANG=ON \
                     -DNCNN_BUILD_EXAMPLES=OFF \
                     -DNCNN_BUILD_BENCHMARK=OFF \
-                    -DNCNN_BUILD_TOOLS=ON
+                    -DNCNN_BUILD_TOOLS=ON \
+                    -DNCNN_SYSTEM_PROTOBUF=ON \
+                    -DNCNN_SHARED_LIB=ON
